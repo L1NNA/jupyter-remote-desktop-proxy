@@ -50,5 +50,10 @@ def setup_desktop():
         'port': 5901,
         'timeout': 30,
         'mappath': {'/': '/vnc_lite.html'},
-        'new_browser_window': True
+        'new_browser_window': True,
+        'launcher_entry': {
+            'title': 'Remote Desktop',
+            'icon_path': os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                      'icons', 'vscode.svg')
+        }
     }
