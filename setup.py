@@ -27,6 +27,9 @@ setup(
     },
     install_requires=['jupyter-server-proxy>=1.4.0'],
     include_package_data=True,
+    package_data={
+        'jupyter_codeserver_proxy': ['icons/*'],
+    },
     keywords=["Interactive", "Desktop", "Jupyter"],
     license="BSD",
     long_description=readme,
