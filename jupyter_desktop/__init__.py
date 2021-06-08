@@ -49,7 +49,7 @@ def setup_desktop():
         ],
         'port': 5901,
         'timeout': 30,
-        'mappath': {'/': '/vnc_lite.html'},
+        'mappath': {'/': '/vnc.html'},
         'new_browser_window': True,
         'launcher_entry': {
             'title': 'Remote Desktop',
