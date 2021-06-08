@@ -151,7 +151,8 @@ const UI = {
         UI.initSetting('shared', true);
         UI.initSetting('view_only', false);
         UI.initSetting('show_dot', false);
-        UI.initSetting('path', 'websockify');
+        let auto_path = window.location.pathname.replace(/[^/]*$/, '').substring(1) + 'websockify';
+        UI.initSetting('path', auto_path);
         UI.initSetting('repeaterID', '');
         UI.initSetting('reconnect', false);
         UI.initSetting('reconnect_delay', 5000);
